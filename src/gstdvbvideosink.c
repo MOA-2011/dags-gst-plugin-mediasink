@@ -339,8 +339,8 @@ gst_dvbvideosink_base_init (gpointer klass)
 				GST_INFO ("model is DM8000... set bcm7405 caps");
 			} else if ( !strncasecmp(string, "DM800", 5) ) {
 				hwtype = DM800;
-				hwtemplate = &sink_factory_bcm7401;
-				GST_INFO ("model is DM800 set bcm7401 caps");
+				hwtemplate = &sink_factory_bcm7405;
+				GST_INFO ("model is DM800 set bcm7405 caps");
 			}
 			if (hwtemplate) {
 				gst_element_class_add_pad_template (element_class,

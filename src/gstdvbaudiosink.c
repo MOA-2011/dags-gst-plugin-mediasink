@@ -289,7 +289,7 @@ gst_dvbaudiosink_base_init (gpointer klass)
 			}
 			else if ( !strncasecmp(string, "DM800", 5) ) {
 				hwtype = DM800;
-				hwtemplate = &sink_factory_broadcom;
+				hwtemplate = &sink_factory_broadcom_dts;
 				GST_INFO ("model is DM800 set broadcom caps", string);
 			}
 			else if ( !strncasecmp(string, "DM500HD", 7) ) {
